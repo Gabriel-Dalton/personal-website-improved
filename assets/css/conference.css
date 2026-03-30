@@ -19,9 +19,9 @@
   .conference-box .content-card {
     display: block;
     padding: 18px;
-    background: #181818;
+    background: #161616;
     border-radius: 12px;
-    border: 1px solid #232323;
+    border: 1px solid #1c1c1c;
     transition: all 0.3s ease;
     color: inherit;
     height: 100%;
@@ -31,7 +31,7 @@
   .conference-box .content-card:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-    border-color: #FFDB6E;
+    border-color: #156633;
   }
   
   .conference-meta {
@@ -48,7 +48,7 @@
   }
   
   .conference-location {
-    color: #FFDB6E;
+    color: #156633;
     font-size: 0.8rem;
   }
   

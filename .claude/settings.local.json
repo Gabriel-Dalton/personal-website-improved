@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(head -20 echo \"---\" grep -n \"FFDB6E\\\\|hsl\\(45\\\\|gold\" \"c:/Users/Gabriel/Documents/GitHub/personal-website-improved/assets/css/newsletter.css\" \"c:/Users/Gabriel/Documents/GitHub/personal-website-improved/assets/css/conference.css\")",
+      "Bash(python3:*)"
+    ]
+  }
+}

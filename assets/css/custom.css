@@ -148,3 +148,258 @@
     margin: 0 auto;
   }
 }
+
+/* ============================================================
+   MODERN REDESIGN — dark green / black / white
+   ============================================================ */
+
+/* --- Base & body --- */
+body { background: #080808 !important; }
+
+/* --- Cards: sidebar + articles --- */
+.sidebar, article {
+  background: #111111 !important;
+  border: 1px solid #1c1c1c !important;
+  border-radius: 20px !important;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5) !important;
+}
+
+/* Subtle green glow on hover */
+.sidebar:hover { border-color: rgba(21,102,51,0.25) !important; }
+
+/* --- Separators --- */
+.separator { background: #1c1c1c !important; }
+
+/* --- Profile title badge → green pill --- */
+.info-content .title {
+  background: #156633 !important;
+  color: #fff !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.6px !important;
+  text-transform: uppercase !important;
+  padding: 4px 14px !important;
+  border-radius: 20px !important;
+  border: none !important;
+}
+
+/* --- Section headings --- */
+.article-title {
+  font-size: 1.75rem !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.3px !important;
+  padding-bottom: 14px !important;
+  margin-bottom: 28px !important;
+}
+
+/* Wider green gradient underline */
+.article-title::after {
+  width: 48px !important;
+  height: 3px !important;
+  background: linear-gradient(to right, #156633, rgba(21,102,51,0.2)) !important;
+  border-radius: 3px !important;
+}
+
+/* --- Icon boxes → solid green fill --- */
+.icon-box {
+  background: #156633 !important;
+  border: none !important;
+  border-radius: 10px !important;
+  box-shadow: none !important;
+}
+.icon-box::before { display: none !important; }
+.icon-box ion-icon { color: #fff !important; }
+
+/* --- Expand sidebar button --- */
+.info_more-btn {
+  background: #156633 !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 16px 0 12px !important;
+  color: #fff !important;
+}
+.info_more-btn::before { display: none !important; }
+.info_more-btn:hover, .info_more-btn:focus {
+  background: #1a7a3f !important;
+}
+.info_more-btn ion-icon { color: #fff !important; }
+
+/* --- Navbar --- */
+.navbar {
+  background: rgba(8,8,8,0.94) !important;
+  border-color: #1c1c1c !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+}
+.navbar-link {
+  color: #666 !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.4px !important;
+  border-radius: 8px !important;
+  transition: color 0.2s ease, background 0.2s ease !important;
+}
+.navbar-link:hover { color: #ccc !important; }
+.navbar-link.active {
+  color: #fff !important;
+  background: #156633 !important;
+  padding: 6px 16px !important;
+  border-radius: 8px !important;
+}
+
+/* --- Content cards (testimonials, blog, etc.) --- */
+.content-card {
+  background: #161616 !important;
+  border: 1px solid #1c1c1c !important;
+  border-radius: 16px !important;
+  box-shadow: none !important;
+  padding-top: 20px !important;
+  transition: border-color 0.25s ease, transform 0.25s ease !important;
+}
+.content-card::before { display: none !important; }
+.content-card:hover {
+  border-color: rgba(21,102,51,0.45) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* --- Service items --- */
+.service-item {
+  background: #161616 !important;
+  border: 1px solid #1c1c1c !important;
+  border-radius: 14px !important;
+  transition: border-color 0.25s ease, transform 0.25s ease !important;
+}
+.service-item:hover {
+  background: #1a1a1a !important;
+  border-color: rgba(21,102,51,0.45) !important;
+  transform: translateY(-2px) !important;
+}
+.service-icon-box {
+  background: #156633 !important;
+  border-radius: 10px !important;
+}
+.service-icon-box ion-icon,
+.service-icon-box img { filter: brightness(10) !important; }
+
+/* --- Portfolio categories service icon --- */
+.portfolio-categories .service-icon-box {
+  background: #156633 !important;
+  border-radius: 10px !important;
+}
+.portfolio-categories .category-icon { color: #fff !important; }
+
+/* --- Timeline --- */
+.timeline::before { background: #1c1c1c !important; }
+.timeline-item::before { background: #156633 !important; border-color: #156633 !important; }
+
+/* --- Skill progress bars --- */
+.skill-progress-fill { background: linear-gradient(to right, #156633, #1db95e) !important; }
+.skill-progress-bg { background: #1c1c1c !important; }
+
+/* --- Scrollbar --- */
+.has-scrollbar::-webkit-scrollbar-track { background: #1a1a1a !important; }
+.has-scrollbar::-webkit-scrollbar-thumb { background: #156633 !important; }
+
+/* --- Form inputs --- */
+.form-input {
+  background: #161616 !important;
+  border-color: #1c1c1c !important;
+  color: #fff !important;
+  border-radius: 12px !important;
+}
+.form-input:focus {
+  border-color: #156633 !important;
+  box-shadow: 0 0 0 3px rgba(21,102,51,0.15) !important;
+}
+
+/* --- Submit button → green with white text --- */
+.form-btn {
+  background: #156633 !important;
+  color: #fff !important;
+  border: 1px solid #156633 !important;
+  border-radius: 12px !important;
+  font-weight: 600 !important;
+}
+.form-btn::before { background: #1a7a3f !important; }
+.form-btn:hover, .form-btn:hover ion-icon, .form-btn:hover span {
+  color: #fff !important;
+}
+.form-btn:hover { border-color: #1a7a3f !important; }
+
+/* --- Text selection + focus --- */
+::selection { background: #156633 !important; color: #fff !important; }
+:focus { outline-color: #156633 !important; }
+
+/* --- Portfolio project items --- */
+.project-item-icon-box { background: #156633 !important; border-radius: 10px !important; }
+
+/* --- Clients / logo grid --- */
+.clients-item a {
+  filter: grayscale(70%) opacity(0.6) !important;
+  transition: filter 0.3s ease !important;
+}
+.clients-item a:hover { filter: grayscale(0%) opacity(1) !important; }
+
+/* --- Testimonials avatar border --- */
+.testimonials-avatar-box {
+  border: 2px solid #1c1c1c !important;
+  border-radius: 14px !important;
+}
+
+/* --- Newsletter section --- */
+.newsletter-signup-section {
+  background: #111111 !important;
+  border-color: #1c1c1c !important;
+}
+.newsletter-signup-title { color: #fff !important; }
+
+/* --- Conference cards --- */
+.conference-box .content-card {
+  background: #161616 !important;
+  border-color: #1c1c1c !important;
+}
+.conference-box .content-card:hover { border-color: rgba(21,102,51,0.45) !important; }
+.conference-location { color: #1db95e !important; }
+
+/* --- Map container --- */
+figure.google-map-box,
+.mapbox {
+  border: 1px solid #1c1c1c !important;
+  border-radius: 16px !important;
+  overflow: hidden !important;
+}
+
+/* --- Select dropdown --- */
+.select-list { background: #161616 !important; border-color: #1c1c1c !important; }
+.select-item button:hover { color: #fff !important; background: #1c1c1c !important; }
+
+/* --- Modal overlay --- */
+.overlay { background: rgba(0,0,0,0.85) !important; }
+.project-modal {
+  background: #111111 !important;
+  border: 1px solid #1c1c1c !important;
+  border-radius: 20px !important;
+}
+.modal-close-btn {
+  background: #161616 !important;
+  color: #fff !important;
+  border: 1px solid #1c1c1c !important;
+}
+.modal-close-btn:hover { background: #156633 !important; border-color: #156633 !important; }
+
+/* --- Filter buttons active state --- */
+[data-filter-btn].active,
+.filter-item button.active {
+  color: #fff !important;
+  background: #156633 !important;
+  border-radius: 8px !important;
+}
+
+/* --- About text & paragraphs --- */
+.about-text p { color: #c0c0c0 !important; line-height: 1.8 !important; }
+
+/* --- Contact title labels --- */
+.contact-title { color: #555 !important; letter-spacing: 0.8px !important; }
+
+/* --- Social links --- */
+.social-item .social-link:hover { color: #1db95e !important; }
