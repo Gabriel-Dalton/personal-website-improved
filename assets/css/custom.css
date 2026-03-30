@@ -150,25 +150,26 @@
 }
 
 /* ============================================================
-   MODERN REDESIGN — dark green / black / white
+   MODERN REDESIGN — clean white / green / black
    ============================================================ */
 
-/* --- Base & body --- */
-body { background: #080808 !important; }
+/* --- Base --- */
+body { background: #f5f5f5 !important; }
 
 /* --- Cards: sidebar + articles --- */
 .sidebar, article {
-  background: #111111 !important;
-  border: 1px solid #1c1c1c !important;
+  background: #ffffff !important;
+  border: 1px solid #ebebeb !important;
   border-radius: 20px !important;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.5) !important;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.06) !important;
 }
 
-/* Subtle green glow on hover */
-.sidebar:hover { border-color: rgba(21,102,51,0.25) !important; }
-
 /* --- Separators --- */
-.separator { background: #1c1c1c !important; }
+.separator { background: #ebebeb !important; }
+
+/* --- Heading colors --- */
+.h2, .h3, .h4, .h5 { color: #111111 !important; }
+.info-content .name { color: #111111 !important; }
 
 /* --- Profile title badge → green pill --- */
 .info-content .title {
@@ -190,13 +191,12 @@ body { background: #080808 !important; }
   letter-spacing: -0.3px !important;
   padding-bottom: 14px !important;
   margin-bottom: 28px !important;
+  color: #111111 !important;
 }
-
-/* Wider green gradient underline */
 .article-title::after {
   width: 48px !important;
   height: 3px !important;
-  background: linear-gradient(to right, #156633, rgba(21,102,51,0.2)) !important;
+  background: linear-gradient(to right, #156633, rgba(21,102,51,0.15)) !important;
   border-radius: 3px !important;
 }
 
@@ -219,27 +219,26 @@ body { background: #080808 !important; }
   color: #fff !important;
 }
 .info_more-btn::before { display: none !important; }
-.info_more-btn:hover, .info_more-btn:focus {
-  background: #1a7a3f !important;
-}
+.info_more-btn:hover, .info_more-btn:focus { background: #1a7a3f !important; }
 .info_more-btn ion-icon { color: #fff !important; }
 
 /* --- Navbar --- */
 .navbar {
-  background: rgba(8,8,8,0.94) !important;
-  border-color: #1c1c1c !important;
+  background: rgba(255,255,255,0.95) !important;
+  border-color: #ebebeb !important;
   backdrop-filter: blur(20px) !important;
   -webkit-backdrop-filter: blur(20px) !important;
+  box-shadow: 0 -1px 0 rgba(0,0,0,0.05) !important;
 }
 .navbar-link {
-  color: #666 !important;
+  color: #999 !important;
   font-size: 12px !important;
   font-weight: 500 !important;
   letter-spacing: 0.4px !important;
   border-radius: 8px !important;
   transition: color 0.2s ease, background 0.2s ease !important;
 }
-.navbar-link:hover { color: #ccc !important; }
+.navbar-link:hover { color: #333 !important; }
 .navbar-link.active {
   color: #fff !important;
   background: #156633 !important;
@@ -247,159 +246,210 @@ body { background: #080808 !important; }
   border-radius: 8px !important;
 }
 
-/* --- Content cards (testimonials, blog, etc.) --- */
+/* --- Content cards (testimonials, etc.) --- */
 .content-card {
-  background: #161616 !important;
-  border: 1px solid #1c1c1c !important;
+  background: #f8f9fa !important;
+  border: 1px solid #ebebeb !important;
   border-radius: 16px !important;
   box-shadow: none !important;
   padding-top: 20px !important;
-  transition: border-color 0.25s ease, transform 0.25s ease !important;
+  transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease !important;
 }
 .content-card::before { display: none !important; }
 .content-card:hover {
-  border-color: rgba(21,102,51,0.45) !important;
+  border-color: rgba(21,102,51,0.3) !important;
   transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(21,102,51,0.08) !important;
 }
 
 /* --- Service items --- */
 .service-item {
-  background: #161616 !important;
-  border: 1px solid #1c1c1c !important;
+  background: #f8f9fa !important;
+  border: 1px solid #ebebeb !important;
   border-radius: 14px !important;
+  box-shadow: none !important;
   transition: border-color 0.25s ease, transform 0.25s ease !important;
 }
+.service-item::before { display: none !important; }
 .service-item:hover {
-  background: #1a1a1a !important;
-  border-color: rgba(21,102,51,0.45) !important;
+  background: #fff !important;
+  border-color: rgba(21,102,51,0.3) !important;
   transform: translateY(-2px) !important;
 }
 .service-icon-box {
   background: #156633 !important;
   border-radius: 10px !important;
+  width: 46px !important;
+  height: 46px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
-.service-icon-box ion-icon,
-.service-icon-box img { filter: brightness(10) !important; }
+.service-icon-box ion-icon { color: #fff !important; font-size: 22px !important; }
+.service-icon-box img { filter: brightness(0) invert(1) !important; width: 22px !important; height: 22px !important; }
 
 /* --- Portfolio categories service icon --- */
-.portfolio-categories .service-icon-box {
-  background: #156633 !important;
-  border-radius: 10px !important;
-}
+.portfolio-categories .service-icon-box { background: #156633 !important; border-radius: 10px !important; }
 .portfolio-categories .category-icon { color: #fff !important; }
 
 /* --- Timeline --- */
-.timeline::before { background: #1c1c1c !important; }
-.timeline-item::before { background: #156633 !important; border-color: #156633 !important; }
+.timeline::before { background: #ebebeb !important; }
+.timeline-item::before { background: #156633 !important; }
+.timeline-item::after { background: #156633 !important; box-shadow: 0 0 0 4px rgba(21,102,51,0.15) !important; }
+.timeline-list span { color: #156633 !important; }
+.timeline-item-title { color: #111 !important; }
+.timeline-text { color: #555 !important; }
 
-/* --- Skill progress bars --- */
-.skill-progress-fill { background: linear-gradient(to right, #156633, #1db95e) !important; }
-.skill-progress-bg { background: #1c1c1c !important; }
+/* --- Skill progress --- */
+.skill-progress-fill { background: linear-gradient(to right, #156633, #22a050) !important; }
+.skill-progress-bg { background: #ebebeb !important; }
 
 /* --- Scrollbar --- */
-.has-scrollbar::-webkit-scrollbar-track { background: #1a1a1a !important; }
+.has-scrollbar::-webkit-scrollbar-track { background: #f0f0f0 !important; }
 .has-scrollbar::-webkit-scrollbar-thumb { background: #156633 !important; }
 
 /* --- Form inputs --- */
 .form-input {
-  background: #161616 !important;
-  border-color: #1c1c1c !important;
-  color: #fff !important;
+  background: #f8f9fa !important;
+  border-color: #ebebeb !important;
+  color: #111 !important;
   border-radius: 12px !important;
 }
+.form-input::placeholder { color: #aaa !important; }
 .form-input:focus {
   border-color: #156633 !important;
-  box-shadow: 0 0 0 3px rgba(21,102,51,0.15) !important;
+  box-shadow: 0 0 0 3px rgba(21,102,51,0.1) !important;
+  background: #fff !important;
 }
 
-/* --- Submit button → green with white text --- */
+/* --- Submit button --- */
 .form-btn {
   background: #156633 !important;
   color: #fff !important;
   border: 1px solid #156633 !important;
   border-radius: 12px !important;
   font-weight: 600 !important;
+  box-shadow: none !important;
 }
 .form-btn::before { background: #1a7a3f !important; }
-.form-btn:hover, .form-btn:hover ion-icon, .form-btn:hover span {
-  color: #fff !important;
-}
+.form-btn:hover, .form-btn:hover ion-icon, .form-btn:hover span { color: #fff !important; }
 .form-btn:hover { border-color: #1a7a3f !important; }
 
-/* --- Text selection + focus --- */
+/* --- Selection + focus --- */
 ::selection { background: #156633 !important; color: #fff !important; }
 :focus { outline-color: #156633 !important; }
 
-/* --- Portfolio project items --- */
-.project-item-icon-box { background: #156633 !important; border-radius: 10px !important; }
-
-/* --- Clients / logo grid --- */
-.clients-item a {
-  filter: grayscale(70%) opacity(0.6) !important;
-  transition: filter 0.3s ease !important;
-}
-.clients-item a:hover { filter: grayscale(0%) opacity(1) !important; }
-
-/* --- Testimonials avatar border --- */
-.testimonials-avatar-box {
-  border: 2px solid #1c1c1c !important;
-  border-radius: 14px !important;
-}
-
-/* --- Newsletter section --- */
-.newsletter-signup-section {
-  background: #111111 !important;
-  border-color: #1c1c1c !important;
-}
-.newsletter-signup-title { color: #fff !important; }
-
-/* --- Conference cards --- */
-.conference-box .content-card {
-  background: #161616 !important;
-  border-color: #1c1c1c !important;
-}
-.conference-box .content-card:hover { border-color: rgba(21,102,51,0.45) !important; }
-.conference-location { color: #1db95e !important; }
-
-/* --- Map container --- */
-figure.google-map-box,
-.mapbox {
-  border: 1px solid #1c1c1c !important;
-  border-radius: 16px !important;
-  overflow: hidden !important;
-}
-
-/* --- Select dropdown --- */
-.select-list { background: #161616 !important; border-color: #1c1c1c !important; }
-.select-item button:hover { color: #fff !important; background: #1c1c1c !important; }
-
-/* --- Modal overlay --- */
-.overlay { background: rgba(0,0,0,0.85) !important; }
-.project-modal {
-  background: #111111 !important;
-  border: 1px solid #1c1c1c !important;
-  border-radius: 20px !important;
-}
-.modal-close-btn {
-  background: #161616 !important;
+/* --- Portfolio hover icon: green bg + white icon --- */
+.project-item-icon-box {
+  background: #156633 !important;
   color: #fff !important;
-  border: 1px solid #1c1c1c !important;
+  border-radius: 12px !important;
 }
-.modal-close-btn:hover { background: #156633 !important; border-color: #156633 !important; }
+.project-item-icon-box ion-icon { color: #fff !important; }
 
-/* --- Filter buttons active state --- */
-[data-filter-btn].active,
-.filter-item button.active {
+/* --- Portfolio filter buttons --- */
+.filter-item button {
+  color: #666 !important;
+  padding: 6px 14px !important;
+  border-radius: 8px !important;
+  transition: color 0.2s ease, background 0.2s ease !important;
+}
+.filter-item button:hover { color: #111 !important; background: #f0f0f0 !important; }
+[data-filter-btn].active, .filter-item button.active {
   color: #fff !important;
   background: #156633 !important;
+  padding: 6px 14px !important;
   border-radius: 8px !important;
 }
 
-/* --- About text & paragraphs --- */
-.about-text p { color: #c0c0c0 !important; line-height: 1.8 !important; }
+/* --- Clients grid --- */
+.clients-item img { filter: grayscale(40%) opacity(0.6) !important; transition: filter 0.3s ease !important; }
+.clients-item img:hover { filter: grayscale(0%) opacity(1) !important; }
+.clients-item a { filter: none !important; }
 
-/* --- Contact title labels --- */
-.contact-title { color: #555 !important; letter-spacing: 0.8px !important; }
+/* --- Testimonials --- */
+.testimonials-avatar-box { border: 2px solid #ebebeb !important; border-radius: 14px !important; }
+.initial-avatar {
+  background: #f0f0f0 !important;
+  border: 2px solid #156633 !important;
+  color: #156633 !important;
+}
+.initial-avatar::before { display: none !important; }
+
+/* --- Map --- */
+.mapbox, figure.google-map-box {
+  border: 1px solid #ebebeb !important;
+  border-radius: 16px !important;
+  overflow: hidden !important;
+}
+.mapbox iframe { filter: none !important; }
+
+/* --- Modal --- */
+.overlay { background: rgba(0,0,0,0.55) !important; }
+.testimonials-modal {
+  background: #ffffff !important;
+  border: 1px solid #ebebeb !important;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.12) !important;
+}
+.modal-close-btn { background: #f0f0f0 !important; color: #333 !important; border: 1px solid #ebebeb !important; }
+.modal-close-btn:hover { background: #156633 !important; color: #fff !important; border-color: #156633 !important; }
+.modal-content p { color: #444 !important; }
+.modal-content time { color: #888 !important; }
+
+/* --- Select dropdown (mobile) --- */
+.filter-select { background: #fff !important; color: #333 !important; border-color: #ebebeb !important; }
+.select-list { background: #fff !important; border-color: #ebebeb !important; }
+.select-item button { background: #fff !important; color: #555 !important; }
+.select-item button:hover { background: #f5f5f5 !important; color: #111 !important; }
+
+/* --- About text --- */
+.about-text p { color: #444 !important; line-height: 1.8 !important; }
+
+/* --- Contact --- */
+.contact-title { color: #aaa !important; letter-spacing: 0.8px !important; }
+.contact-info .contact-link { color: #111 !important; }
+.contact-info .contact-link:hover { color: #156633 !important; }
+.contact-info :is(time, address) { color: #333 !important; }
 
 /* --- Social links --- */
-.social-item .social-link:hover { color: #1db95e !important; }
+.social-item .social-link { color: #bbb !important; }
+.social-item .social-link:hover { color: #156633 !important; }
+
+/* --- Newsletter --- */
+.newsletter-signup-section { background: #f8f9fa !important; border-color: #ebebeb !important; }
+.newsletter-signup-title { color: #111 !important; }
+
+/* --- What I'm Building section --- */
+.building { margin-bottom: 35px; }
+.building-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.building-card {
+  background: #f8f9fa;
+  border: 1px solid #ebebeb;
+  border-radius: 16px;
+  padding: 20px;
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+.building-card:hover {
+  border-color: rgba(21,102,51,0.3);
+  transform: translateY(-2px);
+}
+.building-icon {
+  width: 42px;
+  height: 42px;
+  background: #156633;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+.building-icon ion-icon { color: #fff; }
+.building-card h4 { font-size: 15px; font-weight: 600; color: #111; margin-bottom: 8px; }
+.building-card p { font-size: 13px; color: #555; line-height: 1.6; margin-bottom: 12px; }
+.building-stats { display: flex; align-items: center; gap: 6px; font-size: 12px; color: #156633; font-weight: 600; }
+@media (max-width: 580px) { .building-grid { grid-template-columns: 1fr; } }

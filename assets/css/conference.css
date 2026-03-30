@@ -19,9 +19,9 @@
   .conference-box .content-card {
     display: block;
     padding: 18px;
-    background: #161616;
+    background: #f8f9fa;
     border-radius: 12px;
-    border: 1px solid #1c1c1c;
+    border: 1px solid #ebebeb;
     transition: all 0.3s ease;
     color: inherit;
     height: 100%;
