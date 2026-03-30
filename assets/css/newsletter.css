@@ -1,0 +1,31 @@
+
+  .newsletter-signup-section {
+    margin-top: 48px;
+    margin-bottom: 48px;
+    padding: 32px 18px 28px 18px;
+    background: #181818;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+    border: 1.5px solid #232323;
+    text-align: center;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .newsletter-signup-title {
+    color: #FFDB6E;
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .newsletter-signup-desc {
+    color: #e0e0e0;
+    font-size: 1.08rem;
+    margin-bottom: 20px;
+  }
+  @media (max-width: 600px) {
+    .newsletter-signup-section {
+      max-width: 98vw;
+      padding: 18px 2vw 18px 2vw;
+    }
+  }

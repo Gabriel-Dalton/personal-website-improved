@@ -1,0 +1,73 @@
+.conferences {
+    margin-bottom: 60px;
+  }
+  
+  .conferences-title {
+    margin-bottom: 30px;
+  }
+  
+  .conferences-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .conference-box {
+    list-style: none;
+  }
+  
+  .conference-box .content-card {
+    display: block;
+    padding: 18px;
+    background: #181818;
+    border-radius: 12px;
+    border: 1px solid #232323;
+    transition: all 0.3s ease;
+    color: inherit;
+    height: 100%;
+    min-height: 180px;
+  }
+  
+  .conference-box .content-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    border-color: #FFDB6E;
+  }
+  
+  .conference-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 12px;
+    font-size: 0.85rem;
+    color: #888;
+  }
+  
+  .conference-meta time {
+    font-weight: 500;
+  }
+  
+  .conference-location {
+    color: #FFDB6E;
+    font-size: 0.8rem;
+  }
+  
+  .conference-title {
+    color: #fff;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+  
+  .conference-text {
+    color: #e0e0e0;
+    line-height: 1.5;
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 768px) {
+    .conferences-grid {
+      grid-template-columns: 1fr;
+    }
+  }
