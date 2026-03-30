@@ -1,17 +1,17 @@
 const recommendationItems = [
-    { id: "noosh-baratpour", title: "Letter of Recommendation", person: "Noosh Baratpour", role: "Co-founder & CMO, Formaloo", url: "https://assets.gabrieldalton.com/References/Gabriel_Dalton_Letter_of_Recommendation_Formaloo_CMO.pdf" },
-    { id: "adrien-de-malherbe", title: "Letter of Recommendation", person: "Adrien de Malherbe", role: "Co-Founder, Refoorest", url: "https://assets.gabrieldalton.com/References/Gabriel_Dalton_Letter_of_Recommendation_Adrien_de_Malherbe.pdf" },
-    { id: "farooq-khan", title: "Letter of Recommendation", person: "Farooq Khan", role: "President, Denman Place Mall", url: "https://assets.gabrieldalton.com/References/Gabriel_Dalton_Letter_of_Recommendation_Farooq_Khan.pdf" },
-    { id: "jordan-mittler", title: "Letter of Recommendation", person: "Jordan Mittler", role: "Founder & CEO, Mittler Senior Technology", url: "https://assets.gabrieldalton.com/References/Gabriel_Dalton_Letter_of_Recommendation_Jordan_Mittler.pdf" },
-    { id: "jack-wood", title: "Letter of Recommendation", person: "Jack Wood", role: "Financial Assistant, St. Paul's Anglican Church", url: "https://assets.gabrieldalton.com/References/Gabriel_Dalton_Letter_of_Recommendation_Jack_Wood.pdf" },
-    { id: "sara-ciantar", title: "Letter of Recommendation", person: "Sara Ciantar", role: "Office Administrator & Program Director, St. Paul's", url: "https://assets.gabrieldalton.com/References/Gabriel_Dalton_Letter_of_Recommendation_Sara_Ciantar.pdf" },
-    { id: "michael-andersen", title: "Letter of Recommendation", person: "Michael Andersen", role: "Sustainable WWW", url: "https://assets.gabrieldalton.com/References/Gabriel_Dalton_Letter_of_Recommendation_Michael_Andersen_Sustainable_WWW.pdf" },
+    { id: "noosh-baratpour", title: "Letter of Recommendation", person: "Noosh Baratpour", role: "Co-founder & CMO, Formaloo", url: "/assets/References/Gabriel_Dalton_Letter_of_Recommendation_Formaloo_CMO.pdf" },
+    { id: "adrien-de-malherbe", title: "Letter of Recommendation", person: "Adrien de Malherbe", role: "Co-Founder, Refoorest", url: "/assets/References/Gabriel_Dalton_Letter_of_Recommendation_Adrien_de_Malherbe.pdf" },
+    { id: "farooq-khan", title: "Letter of Recommendation", person: "Farooq Khan", role: "President, Denman Place Mall", url: "/assets/References/Gabriel_Dalton_Letter_of_Recommendation_Farooq_Khan.pdf" },
+    { id: "jordan-mittler", title: "Letter of Recommendation", person: "Jordan Mittler", role: "Founder & CEO, Mittler Senior Technology", url: "/assets/References/Gabriel_Dalton_Letter_of_Recommendation_Jordan_Mittler.pdf" },
+    { id: "jack-wood", title: "Letter of Recommendation", person: "Jack Wood", role: "Financial Assistant, St. Paul's Anglican Church", url: "/assets/References/Gabriel_Dalton_Letter_of_Recommendation_Jack_Wood.pdf" },
+    { id: "sara-ciantar", title: "Letter of Recommendation", person: "Sara Ciantar", role: "Office Administrator & Program Director, St. Paul's", url: "/assets/References/Gabriel_Dalton_Letter_of_Recommendation_Sara_Ciantar.pdf" },
+    { id: "michael-andersen", title: "Letter of Recommendation", person: "Michael Andersen", role: "Sustainable WWW", url: "/assets/References/Gabriel_Dalton_Letter_of_Recommendation_Michael_Andersen_Sustainable_WWW.pdf" },
   ];
 
   const recognitionItems = [
-    { id: "patty-hajdu", title: "Letter of Recognition", person: "Patty Hajdu", role: "Minister of Jobs and Families", url: "https://assets.gabrieldalton.com/References/Gabriel_Dalton_Letter_of_Recognition_Patty_Hajdu.pdf" },
-    { id: "spencer-chandra-hebert", title: "Letter of Recognition", person: "Spencer Chandra Herbert, MLA", role: "Vancouver West End & Coal Harbour", url: "https://assets.gabrieldalton.com/References/Gabriel_Dalton_Letter_of_Recognition_Spencer_Chandra_Hebert.pdf" },
-    { id: "spes-cert", title: "Certificate of Appreciation", person: "Stanley Park Ecology Society", role: "Tricia Collingham, Executive Director", url: "https://assets.gabrieldalton.com/References/Gabriel_Dalton_Certificate_of_Appreciation_SPES.pdf" },
+    { id: "patty-hajdu", title: "Letter of Recognition", person: "Patty Hajdu", role: "Minister of Jobs and Families", url: "/assets/References/Gabriel_Dalton_Letter_of_Recognition_Patty_Hajdu.pdf" },
+    { id: "spencer-chandra-hebert", title: "Letter of Recognition", person: "Spencer Chandra Herbert, MLA", role: "Vancouver West End & Coal Harbour", url: "/assets/References/Gabriel_Dalton_Letter_of_Recognition_Spencer_Chandra_Hebert.pdf" },
+    { id: "spes-cert", title: "Certificate of Appreciation", person: "Stanley Park Ecology Society", role: "Tricia Collingham, Executive Director", url: "/assets/References/Gabriel_Dalton_Certificate_of_Appreciation_SPES.pdf" },
   ];
 
   const projectItems = [
